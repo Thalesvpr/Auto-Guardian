@@ -9,6 +9,7 @@ import pinOn from '/png/Pin.png';
 import pinOff from '/png/PinOff.png';
 
 import apiRequest from '../../services/fetchData';
+import { formatarData } from '../../shared/dateHelper';
 
 
 // Fix default icon issue for markers
@@ -74,7 +75,12 @@ export const MapComponent: React.FC<MapComponentProps> = ({pinState}) => {
           />
           <Marker position={[location.latitude, location.longitude]} icon={customIcon(pinState? pinOn : pinOff)}>
             <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
+              <h2><strong>{pinState ? "😎Localização Atual": "😴 Última Localizaçao"}</strong></h2>
+              <br/>
+              <h2>
+              ⏳{formatarData(new Date(location.created_at))}
+              </h2>
+            
             </Popup>
           </Marker>
         </MapContainer>
