@@ -31,7 +31,7 @@ const Login: React.FC = () => {
     return (
         <div className='login-content'>
             <div className="login-container">
-                <img className='logo' src={isDarkMode ? '/png/logo4dark.png' : '/png/logo.png'} />
+                <img className='logo' src={!isDarkMode ? '/png/logo4dark.png' : '/png/logo.png'} />
                 <h2>Login</h2>
                 <div>
                     <InputField 
