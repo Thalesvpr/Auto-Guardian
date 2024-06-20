@@ -78,11 +78,11 @@ export const Home: React.FC<HomeProps> = () => {
           <div>
           <h1>🛠️ Adcionar novo serviço!</h1>
           </div>
-          <InputField label={'Data do Serviço'} value={''} onChange={(e)=>{ } }></InputField>
-          <InputField label={'Quilometragem do Veículo'} value={''} onChange={(e)=>{ } }></InputField>
-          <InputField label={'Descriçao de Serviço'} value={''} onChange={(e)=>{ } }></InputField>
-          <InputField label={'Peças Substituídas'} value={''} onChange={(e)=>{ } }></InputField>
-          <InputField label={'Contato do Serviço'} value={''} onChange={(e)=>{ } }></InputField>
+          <InputField label={'Data do Serviço'} value={''} onChange={()=>{ } }></InputField>
+          <InputField label={'Quilometragem do Veículo'} value={''} onChange={()=>{ } }></InputField>
+          <InputField label={'Descriçao de Serviço'} value={''} onChange={()=>{ } }></InputField>
+          <InputField label={'Peças Substituídas'} value={''} onChange={()=>{ } }></InputField>
+          <InputField label={'Contato do Serviço'} value={''} onChange={()=>{ } }></InputField>
 
 
           </>
