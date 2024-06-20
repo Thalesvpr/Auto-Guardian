@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { MapComponent } from './components/Map';
 import { IsOn } from './components/IsOn';
-import { InfoBox } from './components/Infos';
 import './Home.css';
 import fetchData from '../../services/fetchData';
 import { Button, FloatingButton } from '../../components/Buttons/Buttons';
