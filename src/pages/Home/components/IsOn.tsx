@@ -1,4 +1,4 @@
-import { FaPowerOff } from 'react-icons/fa';
+import { LuPower, LuPowerOff } from 'react-icons/lu';
 
 type IsOnProps = {
   isOnState: boolean
@@ -6,7 +6,7 @@ type IsOnProps = {
 
 export const IsOn = ({isOnState}: IsOnProps) => (
   <div className={(isOnState? " isOn": " isOff" ) + ' isOn-div'}>
-    <FaPowerOff size={48} />
+    {isOnState? <LuPower size={48}/>: <LuPowerOff size={48}/>}
     <p>{
     isOnState? 
     "Seu carro esta ligado no momento":
