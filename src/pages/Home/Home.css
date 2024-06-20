@@ -32,6 +32,27 @@
     font-weight: 600;
   }
 
+
+  .services-list {
+    margin-top: 20px;
+    min-height: 200px;
+  }
+  .lbl{
+    font-size: 16px;
+    color: #998200;
+  }
+  
+  .services-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .services-list li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 20px;
+  }
   .content{
     padding: 20px;
     display: flex;

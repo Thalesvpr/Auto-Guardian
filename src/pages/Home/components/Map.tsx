@@ -8,8 +8,8 @@ import 'leaflet/dist/leaflet.css';
 import pinOn from '/png/Pin.png';
 import pinOff from '/png/PinOff.png';
 
-import apiRequest from '../../services/fetchData';
-import { formatarData } from '../../shared/dateHelper';
+import apiRequest from '../../../services/fetchData';
+import { formatarData } from '../../../shared/dateHelper';
 
 
 // Fix default icon issue for markers

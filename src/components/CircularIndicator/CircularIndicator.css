@@ -1,0 +1,9 @@
+.bg-pos{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(105, 105, 105, 0.336);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
