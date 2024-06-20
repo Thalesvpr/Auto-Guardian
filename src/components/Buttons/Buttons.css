@@ -1,0 +1,54 @@
+.floating-button {
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+  }
+
+
+  .button {
+
+
+    height: 50px;
+    border-radius: 100px;
+
+    border: none;
+    cursor: pointer;
+  
+  }
+
+  
+  .icon-button {
+      padding: 10px;
+      border-radius: 1000px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .contrast{
+        background-color: #e2c41c;
+        color: white;
+        &:hover{
+            background-color: #c1a50ccc;
+          }
+        
+  }
+
+  .neutral{
+    color: #e2c41c;
+    background-color: white;
+    &:hover{
+        background-color: #dadadacc;
+      }
+    
+}

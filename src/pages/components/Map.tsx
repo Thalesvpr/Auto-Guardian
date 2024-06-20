@@ -39,7 +39,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({pinState}) => {
   useEffect(() => {
     const fetchLocation = async () => {
       try {
-        const response = await apiRequest<Location>('http://18.226.165.77:5000/map/data'); // Substitua pela URL da sua API
+        const response = await apiRequest<Location>('https://back-autoguardian.online/map/data'); // Substitua pela URL da sua API
         setLocation(response.data);
       } catch (err: any) {
         setError(err.message);
