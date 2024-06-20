@@ -4,7 +4,7 @@ import { IsOn } from './components/IsOn';
 import { InfoBox } from './components/Infos';
 import './Home.css';
 import fetchData from '../services/fetchData';
-import { FloatingButton, IconButton } from '../components/Buttons/Buttons';
+import { FloatingButton } from '../components/Buttons/Buttons';
 import { FaTools } from 'react-icons/fa';
 import { PercentBar } from './../components/PercentBar/PercentBar';
 import InputField from '../components/Input/InputField';
@@ -24,6 +24,11 @@ export const Home: React.FC<HomeProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const correctState = "on"
+
+  // const [services, setServices] = useState([{
+    
+  // }]);
+
 
 
   const [isAddServiceOpen, setAddServiceOpen] = useState(false)
@@ -58,11 +63,11 @@ export const Home: React.FC<HomeProps> = () => {
 
   return (
     <>
-      <MapComponent pinState={status == status} />
+      <MapComponent pinState={correctState == status} />
       <div className='absolute_content'>
         <div className='content'>
         <div className='hands'></div>
-        <IsOn isOnState={status == status} />
+        <IsOn isOnState={correctState == status} />
         <h2>Seu score: <span>{score}/100</span></h2>
         <PercentBar percent={score}/>
         <InfoBox />
