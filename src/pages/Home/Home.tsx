@@ -143,9 +143,12 @@ export const Home: React.FC<HomeProps> = () => {
           } } type={'contrast'}>Adcionar</Button>
         </form>
       </Popup>
-      <FloatingButton onClick={() => setAddServiceOpen(true)} type='contrast'>
+      {
+        !isAddServiceOpen && 
+        <FloatingButton onClick={() => setAddServiceOpen(true)} type='contrast'>
         <FaTools size={24} />
       </FloatingButton>
+      }
       
     </>
   );
